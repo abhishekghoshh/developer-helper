@@ -1,0 +1,98 @@
+site_name: Vector DB POC
+site_description: A proof-of-concept for vector databases and embeddings with FastAPI + Qdrant
+repo_url: https://github.com/abhishekghoshh/python-helper
+repo_name: python-helper (vector-db-poc)
+docs_dir: docs
+site_dir: site
+
+nav:
+  - Home: index.md
+  - Concepts:
+    - Overview: concepts.md
+    - Vectors: concepts/vectors.md
+    - Embeddings: concepts/embeddings.md
+    - Embedding Models: concepts/embedding-models.md
+    - Similarity & Distance: concepts/similarity.md
+    - Chunking: concepts/chunking.md
+    - Metadata: concepts/metadata.md
+  - Vector Databases:
+    - Overview: vector-databases.md
+    - Comparison: vector-databases/comparison.md
+    - Indexing: vector-databases/indexing.md
+    - ANN Search: vector-databases/ann.md
+    - Hybrid Search: vector-databases/hybrid-search.md
+    - Metadata Filtering: vector-databases/metadata-filtering.md
+  - Architecture:
+    - Overview: architecture/architecture.md
+    - Data Flow: architecture/data-flow.md
+    - Embedding Service: architecture/embedding-service.md
+    - Vector DB Service: architecture/vector-db-service.md
+    - API Routes: architecture/api-routes.md
+  - API Reference: api.md
+  - Development: development.md
+  - Interview Prep:
+    - Fundamentals: interview/fundamentals.md
+    - Similarity Search: interview/similarity-search.md
+    - Vector Databases: interview/vector-databases.md
+    - Embedding Models: interview/embedding-models.md
+    - System Design: interview/system-design.md
+    - Scenarios: interview/scenarios.md
+  - Project Review: project-review.md
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+    - content.tooltips
+    - search.highlight
+    - toc.follow
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: true
+  - mermaid2
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+
+extra:
+  version:
+    provider: mike
+  palette:
+    - media: "(prefers-color-scheme)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode

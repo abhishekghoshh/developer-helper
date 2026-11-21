@@ -1,0 +1,15 @@
+# [Designing Data-Intensive Applications](https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications)
+These notes are based on the book [Designing Data-Intensive Applications by Martin Kleppmann](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/) — aggregated and handwritten chapter-wise from multiple study notes.
+
+ * [Chapter 1 - Reliable, Scalable, and Maintainable Applications](./01.%20Reliable%20Scalable%20Maintainable%20Applications/index.md)
+ * [Chapter 2 - Data Models and Query Languages](./02.%20Data%20Models%20and%20Query%20Languages/index.md)
+ * [Chapter 3 - Storage and Retrieval](./03.%20Storage%20and%20Retrieval/index.md)
+ * [Chapter 4 - Encoding and Evolution](./04.%20Encoding%20and%20Evolution/index.md)
+ * [Chapter 5 - Replication](./05.%20Replication/index.md)
+ * [Chapter 6 - Partitioning](./06.%20Partitioning/index.md)
+ * [Chapter 7 - Transactions](./07.%20Transactions/index.md)
+ * [Chapter 8 - The Trouble with Distributed Systems](./08.%20Trouble%20with%20Distributed%20Systems/index.md)
+ * [Chapter 9 - Consistency and Consensus](./09.%20Consistency%20and%20Consensus/index.md)
+ * [Chapter 10 - Batch Processing](./10.%20Batch%20Processing/index.md)
+ * [Chapter 11 - Stream Processing](./11.%20Stream%20Processing/index.md)
+ * [Chapter 12 - The Future of Data Systems](./12.%20Future%20of%20Data%20Systems/index.md)

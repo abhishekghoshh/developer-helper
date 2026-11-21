@@ -1,0 +1,18 @@
+# The docs image only needs the MkDocs configuration, requirements, and docs.
+/projects/
+/archive/
+
+# Local environments, generated output, and caches
+.git/
+**/.venv/
+**/venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.ruff_cache/
+**/.mypy_cache/
+**/site/
+
+# Never send local secrets or OS metadata to the build context
+**/.env
+**/.env.*
+**/.DS_Store

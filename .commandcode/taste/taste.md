@@ -1,0 +1,3 @@
+- Does not want third-party reader-mirror/circumvention workarounds for embeds that block framing; prefers to leave blocked content as blocked with only a direct open-in-new-tab option. Confidence: 0.8
+- Wants custom link modals/interception to apply only to page-content links; site chrome (header/navbar, GitHub/repo icon, view/edit page buttons) should keep native navigation and never trigger modals. Confidence: 0.75
+- Wants LLM scratch/one-off helper scripts removed when no longer needed, or moved to skills/an appropriate location if still useful, rather than left lingering in the repo. Confidence: 0.75

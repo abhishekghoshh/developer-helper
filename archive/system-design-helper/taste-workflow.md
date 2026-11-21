@@ -1,0 +1,11 @@
+# Taste
+- Communicates with minimal-interaction prompts (e.g., "continue") and expects the agent to execute complex multi-step tasks autonomously without intermediate confirmation checkpoints or status updates between steps. Confidence: 0.7
+- For large multi-file documentation projects, the user uses parallel multi-agent delegation with **one file per sub-agent** — multi-file prompts per subagent cause output-limit issues, so each subagent handles exactly one file. Parallel batches of 5 sub-agents are launched simultaneously. For small additions (a few missing sections to an existing file), the assistant switches to sequential `edit_file` calls instead. This resolves the apparent conflict: parallel sub-agents for full rewrites, sequential edits for minor additions. Confidence: 0.85
+- Instruct sub-agents with "Use absolute paths only" — file paths in sub-agent prompts and tool calls must be absolute, never relative. Confidence: 0.9
+- Chunked writes: large files must be created in ≤250-line chunks (write_file for the first chunk, then edit_file appends) to avoid output limits; a single ~1300-line write_file call fails. Confidence: 0.85
+- Use a completed gold-standard file as the template/reference when enhancing other files in the same directory (e.g., key-value-store.md for the advanced directory). Confidence: 0.8
+- Uses Java with Spring Boot for code examples. Confidence: 0.9
+- Prefers documentation code examples written as Spring Boot beans (`@Service`/`@Component`) rather than plain Java utility classes, with external configuration injected via `@Value`. Confidence: 0.7
+- Uses `BigDecimal` for all money calculations in code examples. Confidence: 0.85
+- Uses Java records for DTOs and constructor injection (not field injection) in Spring Boot examples. Confidence: 0.8
+- Includes comprehensive Spring ecosystem features in code examples: Bean Validation (`@Valid`, `@NotBlank`, `@DecimalMin`), `@ControllerAdvice` exception handling, `@Transactional`, `@Scheduled`, `@Version` for optimistic locking, `@TransactionalEventListener`, and JPA entities for data-modeling. Confidence: 0.75

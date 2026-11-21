@@ -1,11 +1,14 @@
-site_name: System Design Helper
-site_url: https://abhishekghoshh.github.io/system-design-helper
+site_name: Developer Helper
+site_url: https://abhishekghoshh.github.io/developer-helper
+repo_url: https://github.com/abhishekghoshh/developer-helper
+repo_name: GitHub
+edit_uri: edit/master/docs/
 
 nav:
   - Home: index.md
 
   - Basics:
-    - CPU: basics/cpu.md
+    - Computer Architecture: basics/computer-architecture.md
     - Pointers: basics/pointers.md
     - Maths: basics/maths.md
     - Behavioural: basics/behavioural.md
@@ -26,6 +29,7 @@ nav:
     - Vector Embeddings: ai/vector-embeddings.md
     - Vibe Coding: ai/vibe-coding.md
     - Courses: ai/courses.md
+    - Skills: ai/skills.md
 
   - DevOps:
     - Overview: devops/index.md
@@ -44,6 +48,7 @@ nav:
     - Environment Variables: security/environment-variables.md
     - DevSecOps: security/devsecops.md
     - Firewall: security/firewall.md
+    - Reverse Engineering: security/reverse-engineering.md
     - Certificate:
       - Introduction: security/certificate/introduction.md
       - Certificate Authority: security/certificate/certificate-authority.md
@@ -57,7 +62,52 @@ nav:
       - Nginx: security/reverse-proxy/nginx.md
 
   - System Design:
+    - Overview: system-design/index.md
     - Books: system-design/books.md
+    - System Design Interview Guide:
+      - Overview: system-design/books/system-design-interview-insider-guide/index.md
+      - Scaling: system-design/books/system-design-interview-insider-guide/01. Scaling/index.md
+      - Back of Envelope Estimation: system-design/books/system-design-interview-insider-guide/02. Back Of the Envelope Estimation/index.md
+      - System Design Framework: system-design/books/system-design-interview-insider-guide/03. System Design Framework/index.md
+      - Rate Limiter: system-design/books/system-design-interview-insider-guide/04. Rate Limiter/index.md
+      - Consistent Hashing: system-design/books/system-design-interview-insider-guide/05. Consistent Hashing/index.md
+      - Key-Value Store: system-design/books/system-design-interview-insider-guide/06. Key-Value Store/index.md
+      - Unique-Id Generator: system-design/books/system-design-interview-insider-guide/07. Unique-Id Generator/index.md
+      - URL Shortener: system-design/books/system-design-interview-insider-guide/08. URL Shortener/index.md
+      - Web Crawler: system-design/books/system-design-interview-insider-guide/09. Web Crawler/index.md
+      - Notification System: system-design/books/system-design-interview-insider-guide/10. Notification System/index.md
+      - News Feed System: system-design/books/system-design-interview-insider-guide/11. News Feed System/index.md
+      - Chat System: system-design/books/system-design-interview-insider-guide/12. Chat System/index.md
+      - Search Autocomplete: system-design/books/system-design-interview-insider-guide/13. Search Autocomplete/index.md
+      - Youtube: system-design/books/system-design-interview-insider-guide/14. Youtube/index.md
+      - Google Drive: system-design/books/system-design-interview-insider-guide/15. Google Drive/index.md
+      - Proximity Service: system-design/books/system-design-interview-insider-guide/16. Proximity Service/index.md
+      - Nearby Friends: system-design/books/system-design-interview-insider-guide/17. Nearby Friends/index.md
+      - Google Maps: system-design/books/system-design-interview-insider-guide/18. Google Maps/index.md
+      - Distributed Message Queue: system-design/books/system-design-interview-insider-guide/19. Distributed Message Queue/index.md
+      - Metrics Monitoring and Alerting System: system-design/books/system-design-interview-insider-guide/20. Metrics Monitoring and Alerting System/index.md
+      - Ad Click Event Aggregation: system-design/books/system-design-interview-insider-guide/21. Ad Click Event Aggregation/index.md
+      - Hotel Reservation System: system-design/books/system-design-interview-insider-guide/22. Hotel Reservation System/index.md
+      - Distributed Email Service: system-design/books/system-design-interview-insider-guide/23. Distributed Email Service/index.md
+      - S3-like Object Storage: system-design/books/system-design-interview-insider-guide/24. S3-like Object Storage/index.md
+      - Real-time Gaming Leaderboard: system-design/books/system-design-interview-insider-guide/25. Real-time Gaming Leaderboard/index.md
+      - Payment System: system-design/books/system-design-interview-insider-guide/26. Payment System/index.md
+      - Digital Wallet: system-design/books/system-design-interview-insider-guide/27. Digital Wallet/index.md
+      - Stock Exchange: system-design/books/system-design-interview-insider-guide/28. Stock Exchange/index.md
+      - Designing Data-Intensive Applications:
+        - Overview: system-design/books/data-intensive-applications/index.md
+        - Reliable Scalable Maintainable Applications: system-design/books/data-intensive-applications/01. Reliable Scalable Maintainable Applications/index.md
+        - Data Models and Query Languages: system-design/books/data-intensive-applications/02. Data Models and Query Languages/index.md
+        - Storage and Retrieval: system-design/books/data-intensive-applications/03. Storage and Retrieval/index.md
+        - Encoding and Evolution: system-design/books/data-intensive-applications/04. Encoding and Evolution/index.md
+        - Replication: system-design/books/data-intensive-applications/05. Replication/index.md
+        - Partitioning: system-design/books/data-intensive-applications/06. Partitioning/index.md
+        - Transactions: system-design/books/data-intensive-applications/07. Transactions/index.md
+        - Trouble with Distributed Systems: system-design/books/data-intensive-applications/08. Trouble with Distributed Systems/index.md
+        - Consistency and Consensus: system-design/books/data-intensive-applications/09. Consistency and Consensus/index.md
+        - Batch Processing: system-design/books/data-intensive-applications/10. Batch Processing/index.md
+        - Stream Processing: system-design/books/data-intensive-applications/11. Stream Processing/index.md
+        - Future of Data Systems: system-design/books/data-intensive-applications/12. Future of Data Systems/index.md
     - Courses: system-design/courses.md
     - Interview: system-design/interview.md
     - High Level Design:
@@ -158,118 +208,118 @@ nav:
           - Programming Language: system-design/high-level/concepts/advanced/programming-language.md
           - GitHub Server: system-design/high-level/concepts/advanced/github-server.md
       - Designing:
-        - Overview: system-design/high-level/desgining/0-introduction.md
+        - Overview: system-design/high-level/designing/0-introduction.md
         - Basic:
           # Core Infrastructure & Platform Services
-          - URL Shortener: system-design/high-level/desgining/basic/url-shortner.md
-          - Rate Limiter: system-design/high-level/desgining/basic/rate-limiter.md
-          - Notification System: system-design/high-level/desgining/basic/notification-system.md
-          - Webhook: system-design/high-level/desgining/basic/webhook.md
-          - CDN: system-design/high-level/desgining/basic/cdn.md
-          - Autocomplete: system-design/high-level/desgining/basic/autocomplete.md
-          - Pastebin: system-design/high-level/desgining/basic/pastebin.md
-          - Leaderboard: system-design/high-level/desgining/basic/leaderboard.md
-          - Inventory Management System: system-design/high-level/desgining/basic/inventory-management-system.md
-          - Library Management System: system-design/high-level/desgining/basic/library-management-system.md
-          - Job Board: system-design/high-level/desgining/basic/job-board.md
-          - Bug/Issue Tracker: system-design/high-level/desgining/basic/bug-issue-tracker.md
-          - To-Do List App: system-design/high-level/desgining/basic/todo-list-app.md
-          - Attendance Tracking System: system-design/high-level/desgining/basic/attendance-tracking-system.md
-          - Customer Support Ticketing System: system-design/high-level/desgining/basic/customer-support-ticketing-system.md
+          - URL Shortener: system-design/high-level/designing/basic/url-shortner.md
+          - Rate Limiter: system-design/high-level/designing/basic/rate-limiter.md
+          - Notification System: system-design/high-level/designing/basic/notification-system.md
+          - Webhook: system-design/high-level/designing/basic/webhook.md
+          - CDN: system-design/high-level/designing/basic/cdn.md
+          - Autocomplete: system-design/high-level/designing/basic/autocomplete.md
+          - Pastebin: system-design/high-level/designing/basic/pastebin.md
+          - Leaderboard: system-design/high-level/designing/basic/leaderboard.md
+          - Inventory Management System: system-design/high-level/designing/basic/inventory-management-system.md
+          - Library Management System: system-design/high-level/designing/basic/library-management-system.md
+          - Job Board: system-design/high-level/designing/basic/job-board.md
+          - Bug/Issue Tracker: system-design/high-level/designing/basic/bug-issue-tracker.md
+          - To-Do List App: system-design/high-level/designing/basic/todo-list-app.md
+          - Attendance Tracking System: system-design/high-level/designing/basic/attendance-tracking-system.md
+          - Customer Support Ticketing System: system-design/high-level/designing/basic/customer-support-ticketing-system.md
           # Payments & Commerce
-          - Digital Wallet: system-design/high-level/desgining/basic/digital-wallet.md
-          - Vending Machine: system-design/high-level/desgining/basic/vending-machine.md
-          - Rate-and-Review System: system-design/high-level/desgining/basic/rate-and-review-system.md
+          - Digital Wallet: system-design/high-level/designing/basic/digital-wallet.md
+          - Vending Machine: system-design/high-level/designing/basic/vending-machine.md
+          - Rate-and-Review System: system-design/high-level/designing/basic/rate-and-review-system.md
           # Booking & Marketplace
-          - Hotel Booking: system-design/high-level/desgining/basic/hotel-booking.md
-          - App Store: system-design/high-level/desgining/basic/app-store.md
-          - Yelp: system-design/high-level/desgining/basic/yelp.md
-          - Carpooling System: system-design/high-level/desgining/basic/carpooling-system.md
+          - Hotel Booking: system-design/high-level/designing/basic/hotel-booking.md
+          - App Store: system-design/high-level/designing/basic/app-store.md
+          - Yelp: system-design/high-level/designing/basic/yelp.md
+          - Carpooling System: system-design/high-level/designing/basic/carpooling-system.md
           # Social & Content
-          - Blogging Platform: system-design/high-level/desgining/basic/blogging-platform.md
-          - Image Gallery with Tagging: system-design/high-level/desgining/basic/image-gallery-with-tagging.md
-          - Polling/Voting App: system-design/high-level/desgining/basic/polling-voting-app.md
-          - Online Voting System: system-design/high-level/desgining/basic/online-voting-system.md
+          - Blogging Platform: system-design/high-level/designing/basic/blogging-platform.md
+          - Image Gallery with Tagging: system-design/high-level/designing/basic/image-gallery-with-tagging.md
+          - Polling/Voting App: system-design/high-level/designing/basic/polling-voting-app.md
+          - Online Voting System: system-design/high-level/designing/basic/online-voting-system.md
           # Productivity & Utilities
-          - Expense-Splitting App: system-design/high-level/desgining/basic/expense-splitting-app.md
+          - Expense-Splitting App: system-design/high-level/designing/basic/expense-splitting-app.md
           # Networking & Security
-          - VPN: system-design/high-level/desgining/basic/vpn.md
+          - VPN: system-design/high-level/designing/basic/vpn.md
           # Gaming
-          - Chess Game: system-design/high-level/desgining/basic/chess-game.md
+          - Chess Game: system-design/high-level/designing/basic/chess-game.md
           # Other
-          - How to Host Your Own X: system-design/high-level/desgining/basic/how-to-host-your-own-x.md
+          - How to Host Your Own X: system-design/high-level/designing/basic/how-to-host-your-own-x.md
         - Advanced:
           # Core Infrastructure & Platform Services
-          - Key Value Store: system-design/high-level/desgining/advanced/key-value-store.md
-          - Log System: system-design/high-level/desgining/advanced/log-system.md
-          - Search Engine: system-design/high-level/desgining/advanced/search-engine.md
-          - Authentication System: system-design/high-level/desgining/advanced/authentication-system.md
-          - Distributed Counter: system-design/high-level/desgining/advanced/distributed-counter.md
-          - Distributed Cache: system-design/high-level/desgining/advanced/distributed-cache.md
-          - Distributed Locking Service: system-design/high-level/desgining/advanced/distributed-locking-service.md
-          - Distributed Job Scheduler: system-design/high-level/desgining/advanced/distributed-job-scheduler.md
-          - Distributed Rate Limiter: system-design/high-level/desgining/advanced/distributed-rate-limiter.md
-          - Distributed Rate-Limited API Gateway: system-design/high-level/desgining/advanced/distributed-rate-limited-api-gateway.md
-          - Distributed Configuration Management System: system-design/high-level/desgining/advanced/distributed-configuration-management-system.md
-          - Multi-Region Deployment System: system-design/high-level/desgining/advanced/multi-region-deployment-system.md
-          - Feature Flag and Experimentation Platform: system-design/high-level/desgining/advanced/feature-flag-experimentation-platform.md
-          - Notification Fan-Out Service: system-design/high-level/desgining/advanced/notification-fanout-service.md
+          - Key Value Store: system-design/high-level/designing/advanced/key-value-store.md
+          - Log System: system-design/high-level/designing/advanced/log-system.md
+          - Search Engine: system-design/high-level/designing/advanced/search-engine.md
+          - Authentication System: system-design/high-level/designing/advanced/authentication-system.md
+          - Distributed Counter: system-design/high-level/designing/advanced/distributed-counter.md
+          - Distributed Cache: system-design/high-level/designing/advanced/distributed-cache.md
+          - Distributed Locking Service: system-design/high-level/designing/advanced/distributed-locking-service.md
+          - Distributed Job Scheduler: system-design/high-level/designing/advanced/distributed-job-scheduler.md
+          - Distributed Rate Limiter: system-design/high-level/designing/advanced/distributed-rate-limiter.md
+          - Distributed Rate-Limited API Gateway: system-design/high-level/designing/advanced/distributed-rate-limited-api-gateway.md
+          - Distributed Configuration Management System: system-design/high-level/designing/advanced/distributed-configuration-management-system.md
+          - Multi-Region Deployment System: system-design/high-level/designing/advanced/multi-region-deployment-system.md
+          - Feature Flag and Experimentation Platform: system-design/high-level/designing/advanced/feature-flag-experimentation-platform.md
+          - Notification Fan-Out Service: system-design/high-level/designing/advanced/notification-fanout-service.md
           # Messaging & Real-Time Communication
-          - Chat System: system-design/high-level/desgining/advanced/chat-system.md
-          - WhatsApp: system-design/high-level/desgining/advanced/whatspp.md
-          - Live Comments: system-design/high-level/desgining/advanced/live-comments.md
-          - Distributed Messaging Queue: system-design/high-level/desgining/advanced/distributed-messaging-queue.md
-          - Slack: system-design/high-level/desgining/advanced/slack.md
-          - Fault-Tolerant Order Processing System: system-design/high-level/desgining/advanced/fault-tolerant-order-processing-system.md
+          - Chat System: system-design/high-level/designing/advanced/chat-system.md
+          - WhatsApp: system-design/high-level/designing/advanced/whatspp.md
+          - Live Comments: system-design/high-level/designing/advanced/live-comments.md
+          - Distributed Messaging Queue: system-design/high-level/designing/advanced/distributed-messaging-queue.md
+          - Slack: system-design/high-level/designing/advanced/slack.md
+          - Fault-Tolerant Order Processing System: system-design/high-level/designing/advanced/fault-tolerant-order-processing-system.md
           # Media & Streaming
-          - Video Streaming: system-design/high-level/desgining/advanced/video-streaming.md
-          - Netflix: system-design/high-level/desgining/advanced/netflix.md
-          - Spotify: system-design/high-level/desgining/advanced/spotify.md
-          - Live Streaming: system-design/high-level/desgining/advanced/live-streaming.md
-          - Image Optimisation On The Fly: system-design/high-level/desgining/advanced/Image-Optimisation-on-the-fly.md
+          - Video Streaming: system-design/high-level/designing/advanced/video-streaming.md
+          - Netflix: system-design/high-level/designing/advanced/netflix.md
+          - Spotify: system-design/high-level/designing/advanced/spotify.md
+          - Live Streaming: system-design/high-level/designing/advanced/live-streaming.md
+          - Image Optimisation On The Fly: system-design/high-level/designing/advanced/Image-Optimisation-on-the-fly.md
           # E-Commerce & Payments
-          - Amazon/Flipkart: system-design/high-level/desgining/advanced/amazon-flipkart.md
-          - E-Commerce: system-design/high-level/desgining/advanced/e-commerce.md
-          - E-Commerce Checkout: system-design/high-level/desgining/advanced/ecommerce-checkout.md
-          - Payment Gateway: system-design/high-level/desgining/advanced/payment-gateway.md
-          - Stripe: system-design/high-level/desgining/advanced/stripe.md
-          - UPI Payments: system-design/high-level/desgining/advanced/upi-payments.md
-          - Settlement and Reconciliation System: system-design/high-level/desgining/advanced/settlement-reconciliation-system.md
-          - Fraud Detection Pipeline: system-design/high-level/desgining/advanced/fraud-detection-pipeline.md
-          - Quick-Commerce Inventory System: system-design/high-level/desgining/advanced/quick-commerce-inventory-system.md
-          - E-Commerce Search & Ranking System: system-design/high-level/desgining/advanced/ecommerce-search-ranking-system.md
+          - Amazon/Flipkart: system-design/high-level/designing/advanced/amazon-flipkart.md
+          - E-Commerce: system-design/high-level/designing/advanced/e-commerce.md
+          - E-Commerce Checkout: system-design/high-level/designing/advanced/ecommerce-checkout.md
+          - Payment Gateway: system-design/high-level/designing/advanced/payment-gateway.md
+          - Stripe: system-design/high-level/designing/advanced/stripe.md
+          - UPI Payments: system-design/high-level/designing/advanced/upi-payments.md
+          - Settlement and Reconciliation System: system-design/high-level/designing/advanced/settlement-reconciliation-system.md
+          - Fraud Detection Pipeline: system-design/high-level/designing/advanced/fraud-detection-pipeline.md
+          - Quick-Commerce Inventory System: system-design/high-level/designing/advanced/quick-commerce-inventory-system.md
+          - E-Commerce Search & Ranking System: system-design/high-level/designing/advanced/ecommerce-search-ranking-system.md
           # Social Media & Content
-          - Twitter: system-design/high-level/desgining/advanced/twitter.md
-          - Social Media: system-design/high-level/desgining/advanced/social-media.md
-          - Hashtag Service: system-design/high-level/desgining/advanced/hashtag-service.md
-          - Recommendation Engine: system-design/high-level/desgining/advanced/recomendation-engine.md
-          - Facebook: system-design/high-level/desgining/advanced/facebook.md
-          - Instagram: system-design/high-level/desgining/advanced/instagram.md
-          - TikTok: system-design/high-level/desgining/advanced/tiktok.md
+          - Twitter: system-design/high-level/designing/advanced/twitter.md
+          - Social Media: system-design/high-level/designing/advanced/social-media.md
+          - Hashtag Service: system-design/high-level/designing/advanced/hashtag-service.md
+          - Recommendation Engine: system-design/high-level/designing/advanced/recomendation-engine.md
+          - Facebook: system-design/high-level/designing/advanced/facebook.md
+          - Instagram: system-design/high-level/designing/advanced/instagram.md
+          - TikTok: system-design/high-level/designing/advanced/tiktok.md
           # Booking & Marketplace
-          - BookMyShow: system-design/high-level/desgining/advanced/bookmyshow.md
-          - Uber: system-design/high-level/desgining/advanced/uber.md
-          - Food Delivery: system-design/high-level/desgining/advanced/food-delivery.md
-          - Flight Booking: system-design/high-level/desgining/advanced/flight-booking.md
-          - Google Maps: system-design/high-level/desgining/advanced/google-maps.md
+          - BookMyShow: system-design/high-level/designing/advanced/bookmyshow.md
+          - Uber: system-design/high-level/designing/advanced/uber.md
+          - Food Delivery: system-design/high-level/designing/advanced/food-delivery.md
+          - Flight Booking: system-design/high-level/designing/advanced/flight-booking.md
+          - Google Maps: system-design/high-level/designing/advanced/google-maps.md
           # Storage & Data
-          - Google Drive: system-design/high-level/desgining/advanced/google-drive.md
-          - Data Warehouse: system-design/high-level/desgining/advanced/data-warehouse.md
-          - Distributed Geospatial Data Platform: system-design/high-level/desgining/advanced/distributed-geospatial-data-platform.md
-          - Redis: system-design/high-level/desgining/advanced/redis.md
+          - Google Drive: system-design/high-level/designing/advanced/google-drive.md
+          - Data Warehouse: system-design/high-level/designing/advanced/data-warehouse.md
+          - Distributed Geospatial Data Platform: system-design/high-level/designing/advanced/distributed-geospatial-data-platform.md
+          - Redis: system-design/high-level/designing/advanced/redis.md
           # AI & Developer Tools
-          - Large Language Model: system-design/high-level/desgining/advanced/large-language-model.md
-          - LeetCode: system-design/high-level/desgining/advanced/leetcode.md
-          - Vercel: system-design/high-level/desgining/advanced/vercel.md
-          - Email Automation Platform: system-design/high-level/desgining/advanced/email-automation-platform.md
-          - Google Docs: system-design/high-level/desgining/advanced/google-docs.md
-          - Online Code Editor: system-design/high-level/desgining/advanced/online-code-editor.md
+          - Large Language Model: system-design/high-level/designing/advanced/large-language-model.md
+          - LeetCode: system-design/high-level/designing/advanced/leetcode.md
+          - Vercel: system-design/high-level/designing/advanced/vercel.md
+          - Email Automation Platform: system-design/high-level/designing/advanced/email-automation-platform.md
+          - Google Docs: system-design/high-level/designing/advanced/google-docs.md
+          - Online Code Editor: system-design/high-level/designing/advanced/online-code-editor.md
           # Distributed Systems & Financial Infrastructure
-          - Stock Broker System: system-design/high-level/desgining/advanced/stock-broker-system.md
-          - Distributed Transaction Banking System: system-design/high-level/desgining/advanced/distributed-transaction-banking-system.md
-          - Real-Time Bidding/Auction System: system-design/high-level/desgining/advanced/real-time-bidding-auction-system.md
+          - Stock Broker System: system-design/high-level/designing/advanced/stock-broker-system.md
+          - Distributed Transaction Banking System: system-design/high-level/designing/advanced/distributed-transaction-banking-system.md
+          - Real-Time Bidding/Auction System: system-design/high-level/designing/advanced/real-time-bidding-auction-system.md
           # Gaming
-          - Multiplayer Game: system-design/high-level/desgining/advanced/multiplayer-game.md
+          - Multiplayer Game: system-design/high-level/designing/advanced/multiplayer-game.md
       - Links:
         - Udemy: system-design/high-level/links/udemy.md
         - Websites: system-design/high-level/links/websites.md
@@ -341,21 +391,374 @@ nav:
         - Tic Tac Toe: system-design/low-level/designing/tic-tac-toe.md
         - Vending Machine: system-design/low-level/designing/vending-machine.md
 
-
-
+  - AWS:
+    - DVA-C02 Questions: aws/DVA-C02-questions.md
+    - Cli: aws/cli.md
+    - Dynamodb: aws/dynamodb.md
+    - EKS: aws/eks.md
+    - Firecracker: aws/firecracker.md
+    - GitHub Oidc Role: aws/github-oidc-role.md
+    - Introduction: aws/introduction.md
+    - Links: aws/links.md
+    - Networking: aws/networking.md
+    - S3: aws/s3.md
+    - Slides: aws/slides.md
+    - SSO: aws/sso.md
+    - Terraform Remote State Backend: aws/terraform-remote-state-backend.md
+  - Databases:
+    - Overview: database/index.md
+    - Fundamentals:
+      - B Tree And B Plus Tree: database/database/b-tree-and-b-plus-tree.md
+      - Backup And Recovery: database/database/backup-and-recovery.md
+      - Bloom Filters: database/database/bloom-filters.md
+      - Build Your Own Database: database/database/build-your-own-database.md
+      - Choosing The Right Database: database/database/choosing-the-right-database.md
+      - Concurrency Control: database/database/concurrency-control.md
+      - Constraints: database/database/constraints.md
+      - Database Design: database/database/database-design.md
+      - Database Fundamentals: database/database/database-fundamentals.md
+      - Database Performance: database/database/database-performance.md
+      - Database Security: database/database/database-security.md
+      - Database Storage: database/database/database-storage.md
+      - Denormalization: database/database/denormalization.md
+      - Distributed Databases: database/database/distributed-databases.md
+      - Er Modeling: database/database/er-modeling.md
+      - Indexing: database/database/indexing.md
+      - Introduction: database/database/introduction.md
+      - Lsm Tree: database/database/lsm-tree.md
+      - Migration: database/database/migration.md
+      - Normalization: database/database/normalization.md
+      - Orm Concepts: database/database/orm-concepts.md
+      - Primary Key: database/database/primary-key.md
+      - Query Processing: database/database/query-processing.md
+      - Relational Concepts: database/database/relational-concepts.md
+      - Relationships: database/database/relationships.md
+      - Scaling And Replication: database/database/scaling-and-replication.md
+      - Sharding And Partition: database/database/sharding-and-partition.md
+      - SQL Query Language: database/database/sql-query-language.md
+      - Sqlite: database/database/sqlite.md
+      - Transactions: database/database/transactions.md
+      - Write Ahead Logging: database/database/write-ahead-logging.md
+    - PostgreSQL:
+      - Overview: database/postgres/README.md
+      - Advanced PostgreSQL Features: database/postgres/advanced-postgres-features.md
+      - Backup Recovery Internals: database/postgres/backup-recovery-internals.md
+      - Checkpoints Background Writer: database/postgres/checkpoints-background-writer.md
+      - Configuration Internals: database/postgres/configuration-internals.md
+      - Crash Recovery Internals: database/postgres/crash-recovery-internals.md
+      - Foreign Data Wrappers: database/postgres/foreign-data-wrappers.md
+      - Index Internals: database/postgres/index-internals.md
+      - Introduction: database/postgres/introduction.md
+      - Isolation Transaction Internals: database/postgres/isolation-transaction-internals.md
+      - Links: database/postgres/links.md
+      - Locks Concurrency Internals: database/postgres/locks-concurrency-internals.md
+      - Logical Decoding Cdc: database/postgres/logical-decoding-cdc.md
+      - Logical Replication: database/postgres/logical-replication.md
+      - Monitoring PostgreSQL Internals: database/postgres/monitoring-postgres-internals.md
+      - Mvcc Internals: database/postgres/mvcc-internals.md
+      - Parallel Query Internals: database/postgres/parallel-query-internals.md
+      - Partitioning Internals: database/postgres/partitioning-internals.md
+      - PostgreSQL Architecture Case Studies: database/postgres/postgres-architecture-case-studies.md
+      - PostgreSQL As Platform: database/postgres/postgres-as-platform.md
+      - PostgreSQL Internals Interview: database/postgres/postgres-internals-interview.md
+      - PostgreSQL Replacing Tech Stack: database/postgres/postgres-replacing-tech-stack.md
+      - PostgreSQL Architecture: database/postgres/postgresql-architecture.md
+      - PostgreSQL Connection Internals: database/postgres/postgresql-connection-internals.md
+      - PostgreSQL Extensions: database/postgres/postgresql-extensions.md
+      - PostgreSQL Failure Scenarios: database/postgres/postgresql-failure-scenarios.md
+      - PostgreSQL Internals Projects: database/postgres/postgresql-internals-projects.md
+      - PostgreSQL Logging Debugging: database/postgres/postgresql-logging-debugging.md
+      - PostgreSQL Memory Architecture: database/postgres/postgresql-memory-architecture.md
+      - PostgreSQL Performance Internals: database/postgres/postgresql-performance-internals.md
+      - PostgreSQL Scaling: database/postgres/postgresql-scaling.md
+      - PostgreSQL Security Internals: database/postgres/postgresql-security-internals.md
+      - PostgreSQL Source Code Architecture: database/postgres/postgresql-source-code-architecture.md
+      - PostgreSQL Statistics: database/postgres/postgresql-statistics.md
+      - PostgreSQL Storage Architecture: database/postgres/postgresql-storage-architecture.md
+      - PostgreSQL System Catalogs: database/postgres/postgresql-system-catalogs.md
+      - PostgreSQL Write Path: database/postgres/postgresql-write-path.md
+      - Query Execution Internals: database/postgres/query-execution-internals.md
+      - Real World PostgreSQL Architecture: database/postgres/real-world-postgres-architecture.md
+      - Replication Internals: database/postgres/replication-internals.md
+      - Tablespaces Storage: database/postgres/tablespaces-storage.md
+      - Temporary Files Disk Usage: database/postgres/temporary-files-disk-usage.md
+      - Vacuum Internals: database/postgres/vacuum-internals.md
+      - Wal: database/postgres/wal.md
+      - What Actually Happens: database/postgres/what-actually-happens.md
+      - Why PostgreSQL Struggles With Writes: database/postgres/why-postgres-struggles-with-writes.md
+    - SQL:
+      - Advanced Concepts: database/sql/advanced-concepts.md
+      - Basic Queries: database/sql/basic-queries.md
+      - Constraints: database/sql/constraints.md
+      - Data Types: database/sql/data-types.md
+      - Database Objects: database/sql/database-objects.md
+      - Ddl: database/sql/ddl.md
+      - Dml: database/sql/dml.md
+      - Filtering Data: database/sql/filtering-data.md
+      - Functions: database/sql/functions.md
+      - Group By: database/sql/group-by.md
+      - Indexes: database/sql/indexes.md
+      - Introduction: database/sql/introduction.md
+      - Joins: database/sql/joins.md
+      - Json Support: database/sql/json-support.md
+      - Leetcode: database/sql/leetcode.md
+      - Links: database/sql/links.md
+      - Pagination: database/sql/pagination.md
+      - Query Optimization: database/sql/query-optimization.md
+      - Relationships Integrity: database/sql/relationships-integrity.md
+      - Set Operations: database/sql/set-operations.md
+      - Spring Jpa: database/sql/spring-jpa.md
+      - Stored Objects: database/sql/stored-objects.md
+      - Subqueries Cte: database/sql/subqueries-cte.md
+      - Transactions: database/sql/transactions.md
+      - Views: database/sql/views.md
+      - Window Functions: database/sql/window-functions.md
+    - Redis:
+      - Best Practices: database/redis/best-practices.md
+      - Caching: database/redis/caching.md
+      - Cluster: database/redis/cluster.md
+      - Concurrency Atomicity: database/redis/concurrency-atomicity.md
+      - Data Modeling: database/redis/data-modeling.md
+      - Data Types: database/redis/data-types.md
+      - Design Patterns: database/redis/design-patterns.md
+      - Expiration Eviction: database/redis/expiration-eviction.md
+      - Fundamentals: database/redis/fundamentals.md
+      - Installation Configuration: database/redis/installation-configuration.md
+      - Key Management: database/redis/key-management.md
+      - Links: database/redis/links.md
+      - Lua Scripting: database/redis/lua-scripting.md
+      - Memory Management: database/redis/memory-management.md
+      - Modules Extensions: database/redis/modules-extensions.md
+      - Monitoring Performance: database/redis/monitoring-performance.md
+      - Persistence: database/redis/persistence.md
+      - Pub Sub: database/redis/pub-sub.md
+      - Reliability Recovery: database/redis/reliability-recovery.md
+      - Replication Ha: database/redis/replication-ha.md
+      - Security: database/redis/security.md
+      - Sentinel: database/redis/sentinel.md
+      - Spring Data Redis: database/redis/spring-data-redis.md
+      - Streams: database/redis/streams.md
+      - Transactions: database/redis/transactions.md
+    - MongoDB:
+      - Advance Commands: database/mongodb/advance-commands.md
+      - Aggregation Framework: database/mongodb/aggregation-framework.md
+      - Backup Recovery: database/mongodb/backup-recovery.md
+      - Best Practices: database/mongodb/best-practices.md
+      - Collections: database/mongodb/collections.md
+      - Concurrency: database/mongodb/concurrency.md
+      - Consistency Availability: database/mongodb/consistency-availability.md
+      - Create: database/mongodb/create.md
+      - Crud: database/mongodb/crud.md
+      - Data Modeling: database/mongodb/data-modeling.md
+      - Data Types: database/mongodb/data-types.md
+      - Database Structure: database/mongodb/database-structure.md
+      - Delete: database/mongodb/delete.md
+      - Design Patterns: database/mongodb/design-patterns.md
+      - Geospatial Data: database/mongodb/geospatial-data.md
+      - Gridfs: database/mongodb/gridfs.md
+      - High Availability: database/mongodb/high-availability.md
+      - Index: database/mongodb/index.md
+      - Installation Tools: database/mongodb/installation-tools.md
+      - Introduction: database/mongodb/introduction.md
+      - Links: database/mongodb/links.md
+      - Monitoring: database/mongodb/monitoring.md
+      - Objectid: database/mongodb/objectid.md
+      - Operators: database/mongodb/operators.md
+      - Performance Tuning: database/mongodb/performance-tuning.md
+      - Read: database/mongodb/read.md
+      - Replication: database/mongodb/replication.md
+      - Security: database/mongodb/security.md
+      - Sharding: database/mongodb/sharding.md
+      - Spring Data MongoDB: database/mongodb/spring-data-mongodb.md
+      - Storage Engine: database/mongodb/storage-engine.md
+      - Transactions: database/mongodb/transactions.md
+      - Update: database/mongodb/update.md
+    - Kafka:
+      - Architecture: database/kafka/architecture.md
+      - Best Practices: database/kafka/best-practices.md
+      - Consumer Rebalancing: database/kafka/consumer-rebalancing.md
+      - Consumers: database/kafka/consumers.md
+      - Delivery Semantics: database/kafka/delivery-semantics.md
+      - Deploy Using Docker: database/kafka/deploy-using-docker.md
+      - Design Patterns: database/kafka/design-patterns.md
+      - Error Handling: database/kafka/error-handling.md
+      - Event Driven Architecture: database/kafka/event-driven-architecture.md
+      - Fundamentals: database/kafka/fundamentals.md
+      - Introduction: database/kafka/introduction.md
+      - Kafbat Ui: database/kafka/kafbat-ui.md
+      - Kafka Connect: database/kafka/kafka-connect.md
+      - Kafka Streams: database/kafka/kafka-streams.md
+      - Links: database/kafka/links.md
+      - Monitoring Operations: database/kafka/monitoring-operations.md
+      - Partitions Ordering: database/kafka/partitions-ordering.md
+      - Performance Tuning: database/kafka/performance-tuning.md
+      - Producers: database/kafka/producers.md
+      - Quotas Multi Tenancy: database/kafka/quotas-multi-tenancy.md
+      - Reliability: database/kafka/reliability.md
+      - Replication Fault Tolerance: database/kafka/replication-fault-tolerance.md
+      - Scalability: database/kafka/scalability.md
+      - Schema Management: database/kafka/schema-management.md
+      - Security: database/kafka/security.md
+      - Serialization: database/kafka/serialization.md
+      - Spring Kafka: database/kafka/spring-kafka.md
+      - Storage Retention: database/kafka/storage-retention.md
+      - Topic Management: database/kafka/topic-management.md
+      - Transactions: database/kafka/transactions.md
+    - Other Databases:
+      - SurrealDB: database/others/SurrealDB.md
+      - Cassandra: database/others/cassandra.md
+      - Elastic Search: database/others/elastic-search.md
+      - Graph Database: database/others/graph-database.md
+      - Message Queues: database/others/message-queues.md
+      - Neo4j: database/others/neo4j.md
+      - Nosql: database/others/nosql.md
+      - Orm: database/others/orm.md
+      - RabbitMQ: database/others/rabbitMQ.md
+      - Vector Database: database/others/vector-database.md
+  - Infrastructure:
+    - Overview: infrastructure/index.md
+    - Ansible:
+      - Ansible: infrastructure/ansible/ansible.md
+    - Cloudflare:
+      - Links: infrastructure/cloudflare/links.md
+    - Container:
+      - Docker: infrastructure/container/docker.md
+      - Links: infrastructure/container/links.md
+      - Theory: infrastructure/container/theory.md
+      - Dockerfiles:
+        - React Vite:
+          - Overview: infrastructure/container/dockerfiles/react-vite/README.md
+    - ELK Stack:
+      - Links: infrastructure/elk-stack/links.md
+    - Git:
+      - Advanced: infrastructure/git/advanced.md
+      - Branching: infrastructure/git/branching.md
+      - Cloning: infrastructure/git/cloning.md
+      - Commits: infrastructure/git/commits.md
+      - Configurations: infrastructure/git/configurations.md
+      - Initialization: infrastructure/git/initialization.md
+      - Introduction: infrastructure/git/introduction.md
+      - Links: infrastructure/git/links.md
+      - Logs: infrastructure/git/logs.md
+      - Modifying Files: infrastructure/git/modifying_files.md
+      - Project Status: infrastructure/git/project_status.md
+      - Pull And Synchronize: infrastructure/git/pull_and_synchronize.md
+      - Push: infrastructure/git/push.md
+      - Rebase: infrastructure/git/rebase.md
+      - Tagging: infrastructure/git/tagging.md
+    - GitHub Actions:
+      - Introduction: infrastructure/github-actions/introduction.md
+      - Links: infrastructure/github-actions/links.md
+    - GitLab CI:
+      - Introduction: infrastructure/gitlab-ci/introduction.md
+      - Links: infrastructure/gitlab-ci/links.md
+    - Jenkins:
+      - Introduction: infrastructure/jenkins/introduction.md
+      - Links: infrastructure/jenkins/links.md
+      - Kubernetes Agent:
+        - Overview: infrastructure/jenkins/kubernetes-agent/README.md
+    - Kubernetes:
+      - Links: infrastructure/kubernetes/links.md
+      - Argo CD:
+        - Links: infrastructure/kubernetes/argo-cd/links.md
+      - Cert Manager:
+        - Lets Encrypt: infrastructure/kubernetes/cert-manager/lets-encrypt.md
+      - Helm:
+        - Links: infrastructure/kubernetes/helm/links.md
+        - Theory: infrastructure/kubernetes/helm/theory.md
+      - Kustomize:
+        - Kustomize: infrastructure/kubernetes/kustomize/kustomize.md
+      - Manifests:
+        - Kueue:
+          - Overview: infrastructure/kubernetes/manifests/Kueue/README.md
+        - Etcd:
+          - Etcd: infrastructure/kubernetes/manifests/etcd/etcd.md
+        - MongoDB Master Slave:
+          - Overview: infrastructure/kubernetes/manifests/mongodb-master-slave/README.md
+        - Prometheus Grafana Stack:
+          - Overview: infrastructure/kubernetes/manifests/prometheus-grafana-stack/README.md
+      - Resources:
+        - Command And Args: infrastructure/kubernetes/resources/command-and-args.md
+        - Container Logging: infrastructure/kubernetes/resources/container-logging.md
+        - Deployment: infrastructure/kubernetes/resources/deployment.md
+        - Environment Variables: infrastructure/kubernetes/resources/environment-variables.md
+        - Gateway API: infrastructure/kubernetes/resources/gateway-api.md
+        - Imperative Commands: infrastructure/kubernetes/resources/imperative-commands.md
+        - Ingress: infrastructure/kubernetes/resources/ingress.md
+        - Introduction: infrastructure/kubernetes/resources/introduction.md
+        - Kubernetes Cluster Setup: infrastructure/kubernetes/resources/kubernetes-cluster-setup.md
+        - Kueue: infrastructure/kubernetes/resources/kueue.md
+        - Multi Container Pod: infrastructure/kubernetes/resources/multi-container-pod.md
+        - Namespace: infrastructure/kubernetes/resources/namespace.md
+        - Network Policies: infrastructure/kubernetes/resources/network-policies.md
+        - Networking: infrastructure/kubernetes/resources/networking.md
+        - Node Selectors And Node Affinity: infrastructure/kubernetes/resources/node-selectors-and-node-affinity.md
+        - Pod Design: infrastructure/kubernetes/resources/pod-design.md
+        - Pod: infrastructure/kubernetes/resources/pod.md
+        - Readiness And Liveness Probe: infrastructure/kubernetes/resources/readiness-and-liveness-probe.md
+        - Replica Set: infrastructure/kubernetes/resources/replica-set.md
+        - Resource Requirements: infrastructure/kubernetes/resources/resource-requirements.md
+        - Security Context: infrastructure/kubernetes/resources/security-context.md
+        - Security Practices: infrastructure/kubernetes/resources/security-practices.md
+        - Service Mesh: infrastructure/kubernetes/resources/service-mesh.md
+        - Service: infrastructure/kubernetes/resources/service.md
+        - Taints And Tolerations: infrastructure/kubernetes/resources/taints-and-tolerations.md
+      - Secret Manager:
+        - Hashicorp Vault: infrastructure/kubernetes/secret-manager/hashicorp-vault.md
+    - n8n:
+      - Links: infrastructure/n8n/links.md
+    - Networking:
+      - Introduction: infrastructure/networking/introduction.md
+      - Links: infrastructure/networking/links.md
+      - Codes:
+        - Overview: infrastructure/networking/codes/README.md
+        - Docs:
+          - Bit Stuffing: infrastructure/networking/codes/docs/bit-stuffing.md
+        - TCP:
+          - Python:
+            - Overview: infrastructure/networking/codes/tcp/python/README.md
+    - Observability:
+      - Demo App Readme: infrastructure/observability/demo-app-readme.md
+      - Grafana: infrastructure/observability/grafana.md
+      - Introduction: infrastructure/observability/introduction.md
+      - Links: infrastructure/observability/links.md
+      - Opentelemetry: infrastructure/observability/opentelemetry.md
+      - Prometheus: infrastructure/observability/prometheus.md
+    - Operating Systems:
+      - Links: infrastructure/os/links.md
+      - Linux:
+        - Commands: infrastructure/os/linux/commands.md
+        - Links: infrastructure/os/linux/links.md
+        - Others: infrastructure/os/linux/others.md
+        - Scripting: infrastructure/os/linux/scripting.md
+    - Terraform:
+      - Concepts: infrastructure/terraform/concepts.md
+      - Hashicorp Vault: infrastructure/terraform/hashicorp-vault.md
+      - Introduction: infrastructure/terraform/introduction.md
+      - Links: infrastructure/terraform/links.md
 
 theme:
   name: material
   features:
     - navigation.tabs
     - navigation.sections
-    - toc.integrate
+    - navigation.tabs.sticky
     - navigation.top
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
     - search.suggest
+    - search.share
     - search.highlight
     - content.tabs.link
-    - content.code.annotation
+    - content.code.annotate
     - content.code.copy
+    - content.action.edit
+    - content.action.view
   language: en
   palette:
     - scheme: default
@@ -374,6 +777,7 @@ theme:
 plugins:
   - social
   - search
+  - mkdocs-pdf
   - mermaid2
 
 extra:
@@ -384,6 +788,10 @@ extra:
       link: https://x.com/abhishek_ghoshh
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/abhishek-ghosh-220679132/
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
 
 markdown_extensions:
   - pymdownx.highlight:

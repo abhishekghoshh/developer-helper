@@ -1,0 +1,5 @@
+- When restructuring markdown docs (styling fixes, merges), requires zero content loss — understand content, then reorder sections properly and fix headings only as needed to meet markdown standards. Confidence: 0.9
+- When splitting a large doc, prefers distributing content by meaning into separate topic-named markdown files scoped to the same directory, merging matched content into the appropriate place in existing topic files rather than creating duplicates. Confidence: 0.85
+- Requires every database topic guide to follow the gold pattern (Intro, Theory, Architecture with mermaid diagram, Deep Dive, Examples, Real-life scenario, Interview Q&A, Summary) and treats 100% pattern coverage as definition of done. Confidence: 0.9
+- Treats links.md files and existing external URL lines as frozen — expects verification that zero links.md files were modified and zero URL lines changed before closing docs work. Confidence: 0.9
+- Requires structural validation after bulk markdown edits: balanced code fences and valid mermaid diagram headers, plus fixing incidental defects encountered (unclosed fences, duplicate headings, typos). Confidence: 0.8
