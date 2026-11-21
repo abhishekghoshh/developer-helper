@@ -18,11 +18,11 @@ jobs:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
         with:
-          python-version: 3.x
+          python-version: "3.12"
       - uses: actions/cache@v6
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: sudo apt-get update && sudo apt-get install -y libxml2-dev libxslt1-dev
+      - run: sudo apt-get update && sudo apt-get install -y libxml2-dev libxslt1-dev libjpeg-dev zlib1g-dev
       - run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force
